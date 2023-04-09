@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Test djinni page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="align-items-center d-flex pt-lg-0 pt-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12">
+            <nav class="navbar navbar-expand-lg p-0 row">
+              <div class="col-12 d-block d-lg-none">
+                <div class="row align-items-center justify-content-between">
+                  <div class="col-auto">
+                    <button
+                      class="navbar-toggler"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#navbarSupportedContent"
+                      aria-controls="navbarSupportedContent"
+                      aria-expanded="false"
+                      aria-label="Toggle navigation"
+                    >
+                      <ion-icon name="menu-outline"></ion-icon>
+                    </button>
+                  </div>
+                  <div class="col-auto">
+                    <button class="btn theme">
+                      <ion-icon name="moon-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-xl-4">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item d-lg-none">
+                          <a
+                            href=""
+                            class="nav-link justify-content-center justify-content-lg-left"
+                          >
+                            All photos
+                          </a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                          <a
+                            href=""
+                            class="nav-link justify-content-center justify-content-lg-left"
+                          >
+                            Selfies
+                          </a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                          <a
+                            href=""
+                            class="nav-link justify-content-center justify-content-lg-left"
+                          >
+                            Recent
+                          </a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                          <a
+                            href=""
+                            class="nav-link justify-content-center justify-content-lg-left"
+                          >
+                            Deleted
+                          </a>
+                        </li>
+                        <li class="nav-item active">
+                          <a
+                            class="nav-link justify-content-center justify-content-lg-left"
+                            href="#"
+                            >Photos <span class="sr-only">(current)</span></a
+                          >
+                        </li>
+                        <li class="nav-item">
+                          <a
+                            class="nav-link justify-content-center justify-content-lg-left"
+                            href="#"
+                            >Videos <span class="sr-only">(current)</span></a
+                          >
+                        </li>
+                        <li class="nav-item">
+                          <a
+                            class="nav-link justify-content-center justify-content-lg-left"
+                            href="#"
+                            >Podcasts <span class="sr-only">(current)</span></a
+                          >
+                        </li>
+
+                        <li class="nav-item dropdown d-block d-lg-none">
+                          <a
+                            class="nav-link w-100 dropdown-toggle justify-content-center justify-content-lg-left"
+                            href="#"
+                            id="navbarDropdown"
+                            role="button"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            English
+                            <ion-icon name="chevron-down-outline"></ion-icon>
+                          </a>
+                          <div
+                            class="dropdown-menu w-100"
+                            aria-labelledby="navbarDropdown"
+                          >
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"
+                              >Something else here</a
+                            >
+                          </div>
+                        </li>
+                        <li class="nav-item d-flex d-lg-none">
+                          <a
+                            class="nav-link w-100 justify-content-center justify-content-lg-left"
+                            href="#"
+                            >Sign in</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-xl-8">
+                      <div class="row align-items-center">
+                        <div class="col">
+                          <form
+                            class="form-inline my-2 my-lg-0 d-flex align-items-center position-relative"
+                          >
+                            <input
+                              class="form-control mr-sm-2 w-100 col"
+                              type="search"
+                              placeholder="Search fro anything..."
+                              aria-label="Search"
+                            />
+                            <button class="btn" type="submit">
+                              <ion-icon name="search-outline"></ion-icon>
+                            </button>
+                          </form>
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                          <ul class="navbar-nav mr-auto align-items-center">
+                            <li class="nav-item dropdown">
+                              <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                id="navbarDropdown"
+                                role="button"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                              >
+                                English
+                                <ion-icon
+                                  name="chevron-down-outline"
+                                ></ion-icon>
+                              </a>
+                              <div
+                                class="dropdown-menu"
+                                aria-labelledby="navbarDropdown"
+                              >
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#"
+                                  >Another action</a
+                                >
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#"
+                                  >Something else here</a
+                                >
+                              </div>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Sign in</a>
+                            </li>
+                            <li class="nav-item">
+                              <button class="btn theme">
+                                <ion-icon name="moon-outline"></ion-icon>
+                              </button>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 d-none d-lg-block">
+          <aside>
+            <ul class="pages nav flex-column">
+              <li class="pages-item active">
+                <a href="">
+                  <ion-icon name="image-outline"></ion-icon>
+                  All photos
+                </a>
+              </li>
+              <li class="pages-item">
+                <a href="">
+                  <ion-icon name="happy-outline"></ion-icon>
+                  Selfies
+                </a>
+              </li>
+              <li class="pages-item">
+                <a href="">
+                  <ion-icon name="time-outline"></ion-icon>
+                  Recent
+                </a>
+              </li>
+              <li class="pages-item">
+                <a href="">
+                  <ion-icon name="trash-outline"></ion-icon>
+                  Deleted
+                </a>
+              </li>
+            </ul>
+          </aside>
+        </div>
+        <div class="col-lg-8">
+          <main>
+            <div class="row align-items-center justify-content-between">
+              <div class="col-auto"><h1>All photos</h1></div>
+              <div class="col-auto">
+                <a href="" class="link-tab active">Newest</a>
+                <a href="" class="link-tab">Latest</a>
+              </div>
+              <div class="col-12">
+                <span class="count-item mt-3 mt-lg-0"> 150 items </span>
+              </div>
+              <div class="col-12">
+                <div class="row card-container">
+                  <div class="col-lg-6 mb-4">
+                    <div class="card w-100 h-100" style="width: 18rem">
+                      <img
+                        class="card-img-top"
+                        src="./images/thumbnail.jpg"
+                        alt="Card image cap"
+                      />
+                      <div class="card-body pt-0">
+                        <h5 class="card-title">Heading</h5>
+                        <p class="card-text">
+                          And here full text doesn’t fit, and at the very end of
+                          it we should show a truncatio
+                        </p>
+                      </div>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          <a href="#" class="card-link save"
+                            >Save to collection</a
+                          >
+                          <a href="#" class="card-link share">Share</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 mb-4">
+                    <div class="card w-100 h-100" style="width: 18rem">
+                      <img
+                        class="card-img-top"
+                        src="./images/thumbnail1.jpg"
+                        alt="Card image cap"
+                      />
+                      <div class="card-body pt-0">
+                        <h5 class="card-title">Heading</h5>
+                        <p class="card-text">
+                          And here full text doesn’t fit, and at the very end of
+                          it we should show a truncatio And here full text
+                          doesn’t fit, and at the very end of it we should show
+                          a truncatio And here full text doesn’t fit, and at the
+                          very end of it we should show a truncatio
+                        </p>
+                      </div>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          <a href="#" class="card-link save"
+                            >Save to collection</a
+                          >
+                          <a href="#" class="card-link share">Share</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 mb-4">
+                    <div class="card w-100 h-100" style="width: 18rem">
+                      <img
+                        class="card-img-top"
+                        src="./images/thumbnail2.jpg"
+                        alt="Card image cap"
+                      />
+                      <div class="card-body pt-0">
+                        <h5 class="card-title">Heading</h5>
+                        <p class="card-text">
+                          And here full text doesn’t fit, and at the very end of
+                          it we should show a truncatio And here full text
+                          doesn’t fit, and at the very end of it we should show
+                          a truncatio And here full text doesn’t fit, and at the
+                          very end of it we should show a truncatio
+                        </p>
+                      </div>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          <a href="#" class="card-link save"
+                            >Save to collection</a
+                          >
+                          <a href="#" class="card-link share">Share</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 mb-4">
+                    <div class="card w-100 h-100" style="width: 18rem">
+                      <img
+                        class="card-img-top"
+                        src="./images/thumbnail3.jpg"
+                        alt="Card image cap"
+                      />
+                      <div class="card-body pt-0">
+                        <h5 class="card-title">Heading</h5>
+                        <p class="card-text">
+                          And here full text doesn’t fit, and at the very end of
+                          it we should show a truncatio
+                        </p>
+                      </div>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          <a href="#" class="card-link save"
+                            >Save to collection</a
+                          >
+                          <a href="#" class="card-link share">Share</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./js/js.js"></script>
+  </body>
+</html>
